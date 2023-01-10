@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <form action="#">
+      <label for="gosp"
+        >Gospodarze
+        <select name="" id="gosp">
+          <option value="Polska">Polska</option>
+          <option value="Argentyna" selected>Argentyna</option>
+          <option value="Dania">Dania</option>
+        </select>
+      </label>
+      <label for="gosc"
+        >Goście
+        <select name="" id="gosc">
+          <option value="USA">USA</option>
+          <option value="Meksyk">Meksyk</option>
+          <option value="Iran">Iran</option>
+        </select>
+      </label>
+      <fieldset>
+        <legend>Dogrywka</legend>
+        <label for="dogrT"
+          >jest
+          <input
+            type="radio"
+            name="dogr"
+            value="będzie dogrywka"
+            id="dogrT"
+            checked
+        /></label>
+        <label for="dogrF"
+          >brak
+          <input
+            type="radio"
+            name="dogr"
+            id="dogrF"
+            value="nie będzie dogrywki"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Wynik</legend>
+        <label for="wynikgosp"
+          >Gospodarze: <input type="number" id="wynikgosp" value="0"
+        /></label>
+        <label for="wynikgosc"
+          >Goście: <input type="number" id="wynikgosc" value="0"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Dodatki</legend>
+        <label for="yCard"
+          >Żółta kartka?
+          <input
+            type="checkbox"
+            name="dod"
+            id="yCard"
+            value="żółta kartka" /></label
+        ><label for="rCard"
+          >Czerwona kartka?
+          <input
+            type="checkbox"
+            name="dod"
+            id="rCard"
+            value="czerwona kartka" /></label
+        ><label for="pen"
+          >Karny? <input type="checkbox" name="dod" id="pen" value="karny"
+        /></label>
+      </fieldset>
+      <input type="submit" value="Prześlij przewidywany wynik" /><input
+        type="reset"
+        value="Reset formularza"
+      />
+      <button id="resetMeczu">Reset Meczu</button>
+    </form>
+    <div id="display"></div>
+  </body>
+</html>
